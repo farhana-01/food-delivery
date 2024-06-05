@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:slnt,wght@-10..0,100..900&family=Mohave:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:slnt,wght@-10..0,100..900&family=Mohave:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:slnt,wght@-10..0,100..900&family=Mohave:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  padding: 0 70px;
+  margin: 0 auto;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 70px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0px 20px 40px 1px rgb(0, 0, 0, .2);
+  z-index: 10;
+
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  cursor: pointer;
+
+
+}
+
+.nav-links ul li {
+  margin: 0 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.login-btn {
+  border: none;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Signup-btn {
+  border: none;
+  background-color: #E94339;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+/*-hero section-*/
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0;
+}
+
+.hero-imge {
+  width: 400px;
+  height: auto;
+  animation: hero-imge-animation 2s ease 0s infinite normal none;
+}
+
+.hero-section-left h1 {
+  justify-content: space-between;
+  font-size: 61px;
+  font-weight: bold;
+}
+
+.hero-section-left p {
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.ordre-now-input {
+  position: relative;
+  margin: 20px 0;
+}
+
+.ordre-now-input input {
+  width: 420px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f6f6f6;
+}
+
+.ordre-now-input input[type="text"] {
+  font-size: 16px;
+  padding: 0 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.ordre-now-input input:focus {
+  outline: none;
+}
+
+
+
+.ordre-now-input button {
+  position: absolute;
+  background-color: #E94339;
+  border-radius: 50px;
+  padding: 13px 16px;
+  border: none;
+  color: white;
+  left: 68%;
+  top: 7%;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.Download-btns {
+  display: flex;
+}
+
+.btn-app-store {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 13px;
+  border-radius: 8px;
+  margin: 0px 20px 0px 0px;
+  cursor: pointer;
+
+}
+
+.App-store {
+  font-family: "Inter", sans-serif;
+  margin-right: 16PX;
+  font-weight: bold;
+  font-size: 20px;
+  width: 186.85px;
+  height: 68px;
+  cursor: pointer;
+
+
+
+}
+
+.Download-tex {
+  margin-left: 10px;
+}
+
+/*Order-numbers*/
+
+.Order-numbers {
+  text-align: center;
+  margin: 65px 0px 15px;
+}
+
+.Order-numbers h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.Order-numbers h1 span {
+  color: #FF5331;
+
+}
+
+.Order-numbers p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #191720;
+  ;
+  margin: 20px 0px 0px;
+}
+
+
+/*food-items-and-deals*/
+
+.food-delevry-card {
+  display: flex;
+}
+
+
+
+
+.food-deals-cards {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  border-radius: 28px;
+  padding: 50px;
+  width: 90px;
+  margin: 0px 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+  scale: 1.1;
+  box-shadow: 0px 0px 50px 30px rgb(0, 0, 0, .2);
+  transform: translateY(-10px);
+}
+
+.card span {
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+.card .food-item {
+  background-color: white;
+  border-radius: 50px;
+  padding: 24px;
+
+
+}
+
+.delivery-card {
+  background-color: #FAFAFA;
+  border-radius: 28px;
+  padding: 30px;
+
+}
+
+.delivery-card h3 {
+  font-size: 25.8;
+  font-family: "Inter", sans-serif;
+}
+
+.delivery-card h3 .deals {
+  color: #FF5331;
+
+
+}
+
+.delivery-card h3 .free-delivery {
+  color: #009B00;
+}
+
+.baik-end {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+
+/*secod-food-item-cards*/
+
+.secod-food-item-cards {
+  display: flex;
+  margin: 25px 0px;
+}
+
+.food-item-pera {
+  margin: 20px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.to-order h1 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  padding: 30px;
+}
+
+.bg-squre {
+  background-color: white;
+  padding: 24px
+}
+
+.how-order {
+  position: relative;
+  width: 320px;
+  font-family: "Inter", sans-serif;
+
+}
+
+.Order-card {
+  display: flex;
+
+
+}
+
+.Order-1 {
+  position: absolute;
+  left: -2%;
+  top: 62%;
+  font-family: "Inter", sans-serif;
+}
+
+.claints-feedback {
+
+  padding-top: 30%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+
+
+}
+
+.vector-img {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+
+
+}
+
+.lorem-pera {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: center;
+
+}
+
+.Marsh {
+  text-align: center;
+  margin: 30px 0px 50px 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.Arrow {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+
+.input {
+  background-color: #FFEFEC;
+
+}
+
+.h1-p {
+  font-family: "Poppins", sans-serif;
+  padding: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.005em;
+  text-align: left;
+
+}
+
+.input-2 {
+  display: flex;
+  align-items: center;
+  background-color: #FFEFEC;
+  padding: 50px;
+
+}
+
+.ordre-now-input-2 {
+  position: relative;
+  margin: 20px 0;
+}
+
+.ordre-now-input-2 input {
+  width: 420px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f6f6f6;
+}
+
+.ordre-now-input-2 input[type="text"] {
+  font-size: 16px;
+  padding: 0 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.ordre-now-input-2 input:focus {
+  outline: none;
+}
+
+.ordre-now-input-2 button {
+  position: absolute;
+  background-color: #E94339;
+  border-radius: 50px;
+  padding: 11px 16px;
+  border: none;
+  color: white;
+  left: 77%;
+  top: 7%;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.footer{
+ padding-top: 5%;
+  background-color: black;
+  display: flex;
+}
+
+.footer-button{
+  padding-top: 5%;
+}
+
+
+.text{
+   color: white;
+}
+
+.list{
+  color: white;
+  list-style: none;
+}
+
+.lists{
+ padding:30px;
+}
+
+.last-div{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+
+
+}
+
+.h4{
+  margin-top: 10%;
+  color: white;
+}
+
+.list-2{
+  display: flex;
+  color: white;
+  list-style: none;
+}
+
+.list-2 li{
+ margin: 20px;
+}
+
+/*animation*/
+@keyframes hero-imge-animation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
